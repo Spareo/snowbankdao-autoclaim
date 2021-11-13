@@ -28,7 +28,7 @@ const main = async(): Promise<any> => {
   const percentVested: any = await contract.percentVestedFor(walletAddress)
   console.log({ percentVested: percentVested.toString() })
 
-  console.log(`\nCongrats, you have vested ${Number(pendingPayout)/10e8} SB`)
+  console.log(`\nCongrats, you have vested ${Number(pendingPayout)/10e8} $TIME`)
   console.log("\nRun `yarn redeem` to claim\n")
 
 }
